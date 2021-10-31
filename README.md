@@ -1,6 +1,6 @@
 # Servy
 
-**TODO: Add description**
+This is a learning repo, following the [PragProg](https://online.pragmaticstudio.com/courses/elixir) course.
 
 ## Installation
 
