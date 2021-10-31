@@ -1,4 +1,7 @@
 defmodule Servy.parser do
+
+  alias Servy.Conv
+
   def parse(request) do
     [method, path, _] =     # assign resulting variables splitted by space symbol
       request
@@ -6,11 +9,9 @@ defmodule Servy.parser do
       |> List.first         # get first line
       |> String.split(" ")  # split by space symbol
 
-    %{
+    %Conv{
       method: method,
-      path: path,
-      resp_body: "",
-      status: nil
+      path: path
     }
   end
 end
